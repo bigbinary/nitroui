@@ -1,7 +1,6 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  important: true,
   purge: {
     enabled: process.env.NODE_ENV === "production" ? true : false,
     content: [
@@ -11,9 +10,6 @@ module.exports = {
       "./lib/*.js",
     ],
     defaultExtractor: (content) => content.match(/[A-Za-z0-9-_:/]+/g) || [],
-  },
-  future: {
-    removeDeprecatedGapUtilities: true,
   },
   theme: {
     extend: {
