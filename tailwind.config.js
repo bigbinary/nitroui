@@ -11,9 +11,9 @@ module.exports = {
       "./lib/*.js",
     ],
     defaultExtractor: (content) => content.match(/[A-Za-z0-9-_:/]+/g) || [],
-    // options: {
-    //   safelist: ["sm", "md", "lg", "xl", "2xl"],
-    // },
+    options: {
+      safelist: ["sm", "md", "lg", "xl", "2xl"],
+    },
   },
   theme: {
     extend: {
