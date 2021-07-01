@@ -1,40 +1,18 @@
-@import "@blueprintjs/core/lib/css/blueprint";
-@import "@blueprintjs/datetime/lib/css/blueprint-datetime";
-
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
 //Abstracts
 @import "./abstracts/variables";
+@import "./abstracts/base";
 
 //Utilities
 @import "./utilities/animations";
 @import "./utilities/media-query";
 
 //Components
-@import "./components/badge";
 @import "./components/button";
-@import "./components/dropdown";
-@import "./components/form";
-@import "./components/select";
-@import "./components/table";
-@import "./components/pane";
-@import "./components/modal";
 @import "./components/tab";
-@import "./components/timeline";
-@import "./components/toastr";
-@import "./components/tooltip";
-@import "./components/common";
-@import "./components/dateinput";
-@import "./components/color-picker";
-@import "./components/label";
-@import "./components/slider";
-@import "./components/timeinput";
-@import "./components/accordion";
+@import "./components/form";
+@import "./components/radio";
+@import "./components/checkbox";
+@import "./components/switch";
 
 //Layout
 @import "./layout/common";
-@import "./layout/filterbar";
-@import "./layout/header";
-@import "./layout/menubar";

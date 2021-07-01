@@ -6,11 +6,12 @@ import {
 } from "../lib";
 import Sidebar from './Sidebar';
 import Buttons from './Previews/Buttons';
-import FormElements from './Previews/FormElements';
-import Formik from './Previews/Formik';
-import Overlays from './Previews/Overlays';
+// import FormElements from './Previews/FormElements';
+// import Formik from './Previews/Formik';
+// import Overlays from './Previews/Overlays';
 import Components from './Previews/Components';
-import Layouts from './Previews/Layouts';
+import "./index.scss";
+// import Layouts from './Previews/Layouts';
 
 const App = () => {
   
@@ -24,11 +25,11 @@ const App = () => {
         <div className="relative flex flex-col flex-grow h-screen overflow-auto">
           <Switch>
             <Route path="/buttons" component={Buttons}/>
-            <Route path="/form-elements" component={FormElements}/>
+            {/* <Route path="/form-elements" component={FormElements}/>
             <Route path="/formik" component={Formik}/>
             <Route path="/overlays" component={Overlays}/>
+            <Route path="/layouts" component={Layouts}/> */}
             <Route path="/components" component={Components}/>
-            <Route path="/layouts" component={Layouts}/>
             <Redirect from="/" to="/buttons" />
           </Switch>
         </div>

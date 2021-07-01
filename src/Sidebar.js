@@ -20,24 +20,8 @@ const Sidebar = () => {
             Buttons
           </NavLink>
 
-          <NavLink to="/form-elements" className="flex items-center px-4 py-3 text-sm font-medium text-gray-600 border-l-4 border-transparent hover:bg-gray-50 hover:text-gray-900 group hover:no-underline" activeClassName="text-purple-500 border-l-4 border-indigo-600 bg-indigo-50">
-            Form Elements
-          </NavLink>
-
-          <NavLink to="/formik" className="flex items-center px-4 py-3 text-sm font-medium text-gray-600 border-l-4 border-transparent hover:bg-gray-50 hover:text-gray-900 group hover:no-underline" activeClassName="text-purple-500 border-l-4 border-indigo-600 bg-indigo-50">
-            Formik
-          </NavLink>
-
-          <NavLink to="/overlays" className="flex items-center px-4 py-3 text-sm font-medium text-gray-600 border-l-4 border-transparent hover:bg-gray-50 hover:text-gray-900 group hover:no-underline" activeClassName="text-purple-500 border-l-4 border-indigo-600 bg-indigo-50">
-            Overlays
-          </NavLink>
-
           <NavLink to="/components" className="flex items-center px-4 py-3 text-sm font-medium text-gray-600 border-l-4 border-transparent hover:bg-gray-50 hover:text-gray-900 group hover:no-underline" activeClassName="text-purple-500 border-l-4 border-indigo-600 bg-indigo-50">
             Components
-          </NavLink>
-
-          <NavLink to="/layouts" className="flex items-center px-4 py-3 text-sm font-medium text-gray-600 border-l-4 border-transparent hover:bg-gray-50 hover:text-gray-900 group hover:no-underline" activeClassName="text-purple-500 border-l-4 border-indigo-600 bg-indigo-50">
-            Layouts
           </NavLink>
         </nav>
       </div>

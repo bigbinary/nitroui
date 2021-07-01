@@ -1,78 +1,136 @@
-import React from 'react';
-import {
-  Button,
-  Dropdown,
-  ActionDropdown,
-} from "../../lib";
+import React from 'react'
+import { Button } from "../../lib";
 import Header from '../Header';
 
 const Buttons = () => {
   return (
     <div className="w-full">
       <Header title="Buttons"/>
-      <div className="flex flex-col items-start justify-start p-6">
-        <div className="mb-8">
-          <h4 className="mb-3 text-sm font-medium text-gray-800">Buttons</h4>
-          <div className="flex flex-row items-center justify-start space-x-6">
-            <Button
-              style="primary"
-              label="Primary Button"
-            />
-            <Button
-              style="secondary"
-              label="Secondary Button"
-            />
-            <Button
-              style="warning"
-              label="Warning Button"
-            />
-            <Button
-              style="danger"
-              label="Danger Button"
-            />
-            <Button
-              style="text"
-              label="Text Button"
-            />
-            <Button
-              style="link"
-              label="Link Button"
-            />
+      <div className="p-6 space-y-6">
+        <div className="grid grid-cols-2 gap-6">
+          <div className="p-4 space-y-8 border border-indigo-500 border-dashed">
+            <div className="space-x-8">
+              <Button size="large" label="Label"/>
+              <Button size="large" label="Label"/>
+              <Button size="large" label="Label" disabled/>
+              <Button size="large" label="Label" loading/>
+            </div>
+            <div className="space-x-8">
+              <Button size="large" label="Label" icon="ri-check-line" iconPosition="right"/>
+              <Button size="large" label="Label" icon="ri-check-line" iconPosition="right"/>
+              <Button size="large" label="Label" disabled icon="ri-check-line" iconPosition="right"/>
+              <Button size="large" label="Label" loading icon="ri-check-line" iconPosition="right"/>
+            </div>
+            <div className="space-x-8">
+              <Button size="large" label="Label" icon="ri-check-line"/>
+              <Button size="large" label="Label" icon="ri-check-line"/>
+              <Button size="large" label="Label" disabled icon="ri-check-line"/>
+              <Button size="large" label="Label" loading icon="ri-check-line"/>
+            </div>
+          </div>
+          <div className="p-4 space-y-8 border border-indigo-500 border-dashed">
+            <div className="space-x-8">
+              <Button label="Label"/>
+              <Button label="Label"/>
+              <Button label="Label" disabled/>
+              <Button label="Label" loading/>
+            </div>
+            <div className="space-x-8">
+              <Button label="Label" icon="ri-check-line" iconPosition="right"/>
+              <Button label="Label" icon="ri-check-line" iconPosition="right"/>
+              <Button label="Label" disabled icon="ri-check-line" iconPosition="right"/>
+              <Button label="Label" loading icon="ri-check-line" iconPosition="right"/>
+            </div>
+            <div className="space-x-8">
+              <Button label="Label" icon="ri-check-line"/>
+              <Button label="Label" icon="ri-check-line"/>
+              <Button label="Label" disabled icon="ri-check-line"/>
+              <Button label="Label" loading icon="ri-check-line"/>
+            </div>
           </div>
         </div>
-        <div className="mb-8">
-          <h4 className="mb-3 text-sm font-medium text-gray-800">Dropdowns</h4>
-          <div className="flex flex-row items-center justify-start space-x-6">
-            <Dropdown buttonStyle="icon" icon="ri-more-2-fill">
-              <li>Download Transcript</li>
-              <li>End Chat</li>
-            </Dropdown>
-            <Dropdown
-              label="Dropdown with Action Button"
-              buttonStyle="secondary"
-              actionButtonProps={{
-                style: "link",
-                icon: "ri-add-line ri-lg",
-                label: "Action Button",
-                className: "hover:bg-gray-50",
-              }}
-              position="bottom"
-            >
-              <li>Click Me</li>
-              <li>Hover Me</li>
-            </Dropdown>
-            <ActionDropdown
-              style="primary"
-              buttonProps={{
-                label: "Action Dropdown",
-              }}
-              dropdownProps={{
-                autoWidth: true,
-              }}
-            >
-              <li>Secondary Action</li>
-              <li>Tertiary Action</li>
-            </ActionDropdown>
+        <div className="grid grid-cols-2 gap-6">
+          <div className="p-4 space-y-8 border border-indigo-500 border-dashed">
+            <div className="space-x-8">
+              <Button size="large" style="secondary" label="Label"/>
+              <Button size="large" style="secondary" label="Label"/>
+              <Button size="large" style="secondary" label="Label" disabled/>
+              <Button size="large" style="secondary" label="Label" loading/>
+            </div>
+            <div className="space-x-8">
+              <Button size="large" style="secondary" label="Label" icon="ri-check-line" iconPosition="right"/>
+              <Button size="large" style="secondary" label="Label" icon="ri-check-line" iconPosition="right"/>
+              <Button size="large" style="secondary" label="Label" disabled icon="ri-check-line" iconPosition="right"/>
+              <Button size="large" style="secondary" label="Label" loading icon="ri-check-line" iconPosition="right"/>
+            </div>
+            <div className="space-x-8">
+              <Button size="large" style="secondary" label="Label" icon="ri-check-line"/>
+              <Button size="large" style="secondary" label="Label" icon="ri-check-line"/>
+              <Button size="large" style="secondary" label="Label" disabled icon="ri-check-line"/>
+              <Button size="large" style="secondary" label="Label" loading icon="ri-check-line"/>
+            </div>
+          </div>
+          <div className="p-4 space-y-8 border border-indigo-500 border-dashed">
+            <div className="space-x-8">
+              <Button style="secondary" label="Label"/>
+              <Button style="secondary" label="Label"/>
+              <Button style="secondary" label="Label" disabled/>
+              <Button style="secondary" label="Label" loading/>
+            </div>
+            <div className="space-x-8">
+              <Button style="secondary" label="Label" icon="ri-check-line" iconPosition="right"/>
+              <Button style="secondary" label="Label" icon="ri-check-line" iconPosition="right"/>
+              <Button style="secondary" label="Label" disabled icon="ri-check-line" iconPosition="right"/>
+              <Button style="secondary" label="Label" loading icon="ri-check-line" iconPosition="right"/>
+            </div>
+            <div className="space-x-8">
+              <Button style="secondary" label="Label" icon="ri-check-line"/>
+              <Button style="secondary" label="Label" icon="ri-check-line"/>
+              <Button style="secondary" label="Label" disabled icon="ri-check-line"/>
+              <Button style="secondary" label="Label" loading icon="ri-check-line"/>
+            </div>
+          </div>
+        </div>
+        <div className="grid grid-cols-2 gap-6">
+          <div className="p-4 space-y-8 border border-indigo-500 border-dashed">
+            <div className="space-x-8">
+              <Button size="large" style="danger" label="Label"/>
+              <Button size="large" style="danger" label="Label"/>
+              <Button size="large" style="danger" label="Label" disabled/>
+              <Button size="large" style="danger" label="Label" loading/>
+            </div>
+            <div className="space-x-8">
+              <Button size="large" style="danger" label="Label" icon="ri-check-line" iconPosition="right"/>
+              <Button size="large" style="danger" label="Label" icon="ri-check-line" iconPosition="right"/>
+              <Button size="large" style="danger" label="Label" disabled icon="ri-check-line" iconPosition="right"/>
+              <Button size="large" style="danger" label="Label" loading icon="ri-check-line" iconPosition="right"/>
+            </div>
+            <div className="space-x-8">
+              <Button size="large" style="danger" label="Label" icon="ri-check-line"/>
+              <Button size="large" style="danger" label="Label" icon="ri-check-line"/>
+              <Button size="large" style="danger" label="Label" disabled icon="ri-check-line"/>
+              <Button size="large" style="danger" label="Label" loading icon="ri-check-line"/>
+            </div>
+          </div>
+          <div className="p-4 space-y-8 border border-indigo-500 border-dashed">
+            <div className="space-x-8">
+              <Button style="danger" label="Label"/>
+              <Button style="danger" label="Label"/>
+              <Button style="danger" label="Label" disabled/>
+              <Button style="danger" label="Label" loading/>
+            </div>
+            <div className="space-x-8">
+              <Button style="danger" label="Label" icon="ri-check-line" iconPosition="right"/>
+              <Button style="danger" label="Label" icon="ri-check-line" iconPosition="right"/>
+              <Button style="danger" label="Label" disabled icon="ri-check-line" iconPosition="right"/>
+              <Button style="danger" label="Label" loading icon="ri-check-line" iconPosition="right"/>
+            </div>
+            <div className="space-x-8">
+              <Button style="danger" label="Label" icon="ri-check-line"/>
+              <Button style="danger" label="Label" icon="ri-check-line"/>
+              <Button style="danger" label="Label" disabled icon="ri-check-line"/>
+              <Button style="danger" label="Label" loading icon="ri-check-line"/>
+            </div>
           </div>
         </div>
       </div>
