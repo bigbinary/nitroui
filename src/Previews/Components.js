@@ -10,7 +10,8 @@ const Components = () => {
     <div className="w-full">
       <Header title="Buttons" />
       <Modal>
-        <Modal.Title>Confirm deletion</Modal.Title>This is amazing
+        <Modal.Title>Confirm deletion</Modal.Title>
+        <Modal.Body>Are you sure buddy?</Modal.Body>
       </Modal>
       <div className="p-6 space-y-6">
         <div className="w-1/2 p-4 space-y-8 border border-indigo-500 border-dashed">
