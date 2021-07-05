@@ -19,13 +19,28 @@
     text-decoration: none;
   }
 
-  i {
-    &:first-child {
-      margin-right: 12px;
+  &:not(.nui-btn--iconLeft) {
+    & > i,
+    svg,
+    div {
+      &:last-child:not(:first-child) {
+        margin-left: 24px;
+      }
     }
+  }
 
-    &:last-child {
-      margin-left: 24px;
+  &.nui-btn--iconLeft {
+    flex-direction: row-reverse;
+
+    & > i,
+    svg,
+    div {
+      &:last-child:not(:first-child) {
+        margin-right: 12px;
+      }
+      &:first-child:not(:last-child) {
+        margin-right: 12px;
+      }
     }
   }
 
