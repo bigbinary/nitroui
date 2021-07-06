@@ -5,6 +5,7 @@ import Header from "../Header";
 
 const Components = () => {
   const [showModal, setShowModal] = useState(false);
+  const [checked, setChecked] = useState(false);
   return (
     <div className="w-full">
       <Header title="Buttons" />
@@ -57,33 +58,33 @@ const Components = () => {
           <div className="flex flex-row items-center justify-start space-x-6">
             <div>
               <Radio>
-                <Radio.Item />
-                <Radio.Item disabled />
+                <Radio.Item name="radio" />
+                <Radio.Item name="radio" disabled />
               </Radio>
             </div>
             <div className="flex space-x-6">
-              <Checkbox />
-              <Checkbox disabled />
+              <Checkbox checked={checked} onChange={() => setChecked(!checked)}/>
+              <Checkbox disabled checked={checked} onChange={() => setChecked(!checked)}/>
             </div>
             <div className="flex space-x-6">
-              <Switch />
-              <Switch disabled />
+              <Switch checked={checked} onChange={() => setChecked(!checked)}/>
+              <Switch disabled checked={checked} onChange={() => setChecked(!checked)}/>
             </div>
           </div>
           <div className="flex flex-row items-center justify-start space-x-6">
             <div>
               <Radio>
-                <Radio.Item checked />
-                <Radio.Item checked disabled />
+                <Radio.Item name="radio" />
+                <Radio.Item name="radio" disabled />
               </Radio>
             </div>
             <div className="flex space-x-6">
-              <Checkbox checked />
-              <Checkbox checked disabled />
+              <Checkbox checked onChange={() => {}}/>
+              <Checkbox checked disabled onChange={() => {}}/>
             </div>
             <div className="flex space-x-6">
-              <Switch checked />
-              <Switch checked disabled />
+              <Switch checked onChange={() => {}}/>
+              <Switch checked disabled onChange={() => {}}/>
             </div>
           </div>
         </div>
