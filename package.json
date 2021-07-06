@@ -71,6 +71,7 @@
     "postcss": "^8.2.9",
     "prop-types": "^15.7.2",
     "react-color": "^2.19.3",
+    "react-hotkeys-hook": "^3.3.2",
     "yup": "^0.30.0"
   },
   "description": "NeetoUI is the library that drives the experience in all Neeto products built at BigBinary",

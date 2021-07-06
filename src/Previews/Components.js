@@ -1,20 +1,35 @@
-import { show } from "@blueprintjs/core/lib/esm/components/context-menu/contextMenu";
 import React, { useState } from "react";
+import { Right } from "@bigbinary/neeto-icons";
 import { Button, Tab, Radio, Checkbox, Switch, Modal } from "../../lib";
 import Header from "../Header";
 
 const Components = () => {
-  const [showModal, setShowModal] = useState(true);
-  const toggleModal = () => setShowModal(!showModal);
+  const [showModal, setShowModal] = useState(false);
   return (
     <div className="w-full">
       <Header title="Buttons" />
-      <Modal isOpen={showModal}>
-        <Modal.Title>Confirm deletion</Modal.Title>
+      <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
+        <Modal.Header className="bg-gray-50">
+          <Modal.Title>Deactivate account</Modal.Title>
+        </Modal.Header>
         <Modal.Body>
-          Are you sure buddy?
-          <Button onClick={() => setShowModal(false)} />
+          Are you sure you want to deactivate your account? All of your data
+          will be permanently removed from our servers forever. This action
+          cannot be undone.
         </Modal.Body>
+        <Modal.Footer className="flex justify-end space-x-4">
+          <Button
+            style="text"
+            label="Cancel"
+            onClick={() => setShowModal(false)}
+          />
+          <Button
+            style="danger"
+            icon={Right}
+            label="Continue"
+            onClick={() => setShowModal(false)}
+          />
+        </Modal.Footer>
       </Modal>
       <div className="p-6 space-y-6">
         <div className="w-1/2 p-4 space-y-8 border border-indigo-500 border-dashed">
@@ -73,6 +88,11 @@ const Components = () => {
               <Switch checked />
               <Switch checked disabled />
             </div>
+          </div>
+        </div>
+        <div className="w-1/2 p-4 space-y-8 border border-indigo-500 border-dashed">
+          <div className="flex flex-row items-center justify-start space-x-6">
+            <Button label="Show modal" onClick={() => setShowModal(true)} />
           </div>
         </div>
       </div>

@@ -17,14 +17,30 @@
     flex-direction: column;
     background: white;
     border-radius: 4px;
+    overflow: hidden;
 
-    .nui-modal--title {
-      padding: 12px 16px;
-      border-bottom: 1px solid $gray-200;
+    &.nui-modal--sm {
+      width: 30vw;
+    }
+
+    &.nui-modal--md {
+      width: 45vw;
+    }
+
+    &.nui-modal--md {
+      width: 65vw;
+    }
+
+    .nui-modal--header {
+      padding: 16px 24px;
     }
 
     .nui-modal--body {
-      padding: 16px;
+      padding: 16px 24px;
+    }
+
+    .nui-modal--footer {
+      padding: 16px 24px;
     }
   }
 }
