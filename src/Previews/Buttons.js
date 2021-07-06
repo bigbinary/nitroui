@@ -12,7 +12,7 @@ const Buttons = () => {
     <div className="w-full">
       <Header title="Buttons" />
       <div className="p-6 space-y-6">
-        <Button onClick={toggle} label="Toggle loadingstate" />
+        <Button onClick={toggle} label="Toggle Loading State" />
         <div className="grid grid-cols-2 gap-6">
           <div className="p-4 space-y-8 border border-indigo-500 border-dashed">
             <div className="space-x-8">
@@ -36,47 +36,10 @@ const Buttons = () => {
                 disabled
               />
               <Button
-                iconPosition="left"
-                loading={loading}
-                onClick={toggle}
-                size="large"
-                label="Label"
-              />
-            </div>
-            <div className="space-x-8">
-              <Button
-                loading={loading}
-                onClick={toggle}
-                size="large"
-                label="Label"
-                icon={Keyboard}
-                iconPosition="left"
-              />
-              <Button
-                loading={loading}
-                onClick={toggle}
-                size="large"
-                label="Label"
-                icon={Keyboard}
-                iconPosition="right"
-              />
-              <Button
-                loading={loading}
-                onClick={toggle}
-                size="large"
-                label="Label"
-                disabled
-                icon={Keyboard}
-                iconPosition="right"
-              />
-              <Button
-                loading={loading}
                 onClick={toggle}
                 size="large"
                 label="Label"
                 loading
-                icon={Keyboard}
-                iconPosition="right"
               />
             </div>
             <div className="space-x-8">
@@ -103,58 +66,60 @@ const Buttons = () => {
                 icon={Keyboard}
               />
               <Button
+                onClick={toggle}
+                size="large"
+                label="Label"
+                icon={Keyboard}
+                loading
+              />
+            </div>
+            <div className="space-x-8">
+              <Button
                 loading={loading}
                 onClick={toggle}
                 size="large"
                 label="Label"
-                loading
                 icon={Keyboard}
+                iconPosition="left"
+              />
+              <Button
+                loading={loading}
+                onClick={toggle}
+                size="large"
+                label="Label"
+                icon={Keyboard}
+                iconPosition="left"
+              />
+              <Button
+                loading={loading}
+                onClick={toggle}
+                size="large"
+                label="Label"
+                disabled
+                icon={Keyboard}
+                iconPosition="left"
+              />
+              <Button
+                onClick={toggle}
+                size="large"
+                label="Label"
+                icon={Keyboard}
+                iconPosition="left"
+                loading
               />
             </div>
           </div>
           <div className="p-4 space-y-8 border border-indigo-500 border-dashed">
             <div className="space-x-8">
-              <Button loading={loading} onClick={toggle} label="Label" />
-              <Button loading={loading} onClick={toggle} label="Label" />
+              <Button loading={loading} onClick={toggle} label="Label"/>
+              <Button loading={loading} onClick={toggle} label="Label"/>
               <Button
                 loading={loading}
                 onClick={toggle}
                 label="Label"
                 disabled
               />
-              <Button loading={loading} onClick={toggle} label="Label" />
-            </div>
-            <div className="space-x-8">
-              <Button
-                loading={loading}
-                onClick={toggle}
-                label="Label"
-                icon={Keyboard}
-                iconPosition="right"
-              />
-              <Button
-                loading={loading}
-                onClick={toggle}
-                label="Label"
-                icon={Keyboard}
-                iconPosition="right"
-              />
-              <Button
-                loading={loading}
-                onClick={toggle}
-                label="Label"
-                disabled
-                icon={Keyboard}
-                iconPosition="right"
-              />
-              <Button
-                loading={loading}
-                onClick={toggle}
-                label="Label"
-                loading
-                icon={Keyboard}
-                iconPosition="right"
-              />
+              <Button onClick={toggle} label="Label" loading/>
             </div>
             <div className="space-x-8">
               <Button
@@ -180,8 +145,40 @@ const Buttons = () => {
                 loading={loading}
                 onClick={toggle}
                 label="Label"
+                icon={Keyboard}
+                loading
+              />
+            </div>
+            <div className="space-x-8">
+              <Button
+                loading={loading}
+                onClick={toggle}
+                label="Label"
+                icon={Keyboard}
+                iconPosition="left"
+              />
+              <Button
+                loading={loading}
+                onClick={toggle}
+                label="Label"
+                icon={Keyboard}
+                iconPosition="left"
+              />
+              <Button
+                loading={loading}
+                onClick={toggle}
+                label="Label"
+                disabled
+                icon={Keyboard}
+                iconPosition="left"
+              />
+              <Button
+                loading={loading}
+                onClick={toggle}
+                label="Label"
                 loading
                 icon={Keyboard}
+                iconPosition="left"
               />
             </div>
           </div>
@@ -212,52 +209,11 @@ const Buttons = () => {
                 disabled
               />
               <Button
-                loading={loading}
                 onClick={toggle}
                 size="large"
                 style="secondary"
                 label="Label"
                 loading
-              />
-            </div>
-            <div className="space-x-8">
-              <Button
-                loading={loading}
-                onClick={toggle}
-                size="large"
-                style="secondary"
-                label="Label"
-                icon={Keyboard}
-                iconPosition="right"
-              />
-              <Button
-                loading={loading}
-                onClick={toggle}
-                size="large"
-                style="secondary"
-                label="Label"
-                icon={Keyboard}
-                iconPosition="right"
-              />
-              <Button
-                loading={loading}
-                onClick={toggle}
-                size="large"
-                style="secondary"
-                label="Label"
-                disabled
-                icon={Keyboard}
-                iconPosition="right"
-              />
-              <Button
-                loading={loading}
-                onClick={toggle}
-                size="large"
-                style="secondary"
-                label="Label"
-                loading
-                icon={Keyboard}
-                iconPosition="right"
               />
             </div>
             <div className="space-x-8">
@@ -287,6 +243,44 @@ const Buttons = () => {
                 icon={Keyboard}
               />
               <Button
+                onClick={toggle}
+                size="large"
+                style="secondary"
+                label="Label"
+                loading
+                icon={Keyboard}
+              />
+            </div>
+            <div className="space-x-8">
+              <Button
+                loading={loading}
+                onClick={toggle}
+                size="large"
+                style="secondary"
+                label="Label"
+                icon={Keyboard}
+                iconPosition="left"
+              />
+              <Button
+                loading={loading}
+                onClick={toggle}
+                size="large"
+                style="secondary"
+                label="Label"
+                icon={Keyboard}
+                iconPosition="left"
+              />
+              <Button
+                loading={loading}
+                onClick={toggle}
+                size="large"
+                style="secondary"
+                label="Label"
+                disabled
+                icon={Keyboard}
+                iconPosition="left"
+              />
+              <Button
                 loading={loading}
                 onClick={toggle}
                 size="large"
@@ -294,6 +288,7 @@ const Buttons = () => {
                 label="Label"
                 loading
                 icon={Keyboard}
+                iconPosition="left"
               />
             </div>
           </div>
@@ -333,7 +328,6 @@ const Buttons = () => {
                 style="secondary"
                 label="Label"
                 icon={Keyboard}
-                iconPosition="right"
               />
               <Button
                 loading={loading}
@@ -341,7 +335,6 @@ const Buttons = () => {
                 style="secondary"
                 label="Label"
                 icon={Keyboard}
-                iconPosition="right"
               />
               <Button
                 loading={loading}
@@ -350,16 +343,13 @@ const Buttons = () => {
                 label="Label"
                 disabled
                 icon={Keyboard}
-                iconPosition="right"
               />
               <Button
-                loading={loading}
                 onClick={toggle}
                 style="secondary"
                 label="Label"
                 loading
                 icon={Keyboard}
-                iconPosition="right"
               />
             </div>
             <div className="space-x-8">
@@ -369,6 +359,7 @@ const Buttons = () => {
                 style="secondary"
                 label="Label"
                 icon={Keyboard}
+                iconPosition="left"
               />
               <Button
                 loading={loading}
@@ -376,6 +367,7 @@ const Buttons = () => {
                 style="secondary"
                 label="Label"
                 icon={Keyboard}
+                iconPosition="left"
               />
               <Button
                 loading={loading}
@@ -384,14 +376,15 @@ const Buttons = () => {
                 label="Label"
                 disabled
                 icon={Keyboard}
+                iconPosition="left"
               />
               <Button
-                loading={loading}
                 onClick={toggle}
                 style="secondary"
                 label="Label"
-                loading
                 icon={Keyboard}
+                iconPosition="left"
+                loading
               />
             </div>
           </div>
@@ -460,7 +453,6 @@ const Buttons = () => {
                 iconPosition="right"
               />
               <Button
-                loading={loading}
                 onClick={toggle}
                 size="large"
                 style="danger"
@@ -478,6 +470,7 @@ const Buttons = () => {
                 style="danger"
                 label="Label"
                 icon={Keyboard}
+                iconPosition="left"
               />
               <Button
                 loading={loading}
@@ -486,6 +479,7 @@ const Buttons = () => {
                 style="danger"
                 label="Label"
                 icon={Keyboard}
+                iconPosition="left"
               />
               <Button
                 loading={loading}
@@ -495,15 +489,16 @@ const Buttons = () => {
                 label="Label"
                 disabled
                 icon={Keyboard}
+                iconPosition="left"
               />
               <Button
-                loading={loading}
                 onClick={toggle}
                 size="large"
                 style="danger"
                 label="Label"
                 loading
                 icon={Keyboard}
+                iconPosition="left"
               />
             </div>
           </div>
@@ -542,7 +537,6 @@ const Buttons = () => {
                 style="danger"
                 label="Label"
                 icon={Keyboard}
-                iconPosition="right"
               />
               <Button
                 loading={loading}
@@ -550,7 +544,6 @@ const Buttons = () => {
                 style="danger"
                 label="Label"
                 icon={Keyboard}
-                iconPosition="right"
               />
               <Button
                 loading={loading}
@@ -559,16 +552,13 @@ const Buttons = () => {
                 label="Label"
                 disabled
                 icon={Keyboard}
-                iconPosition="right"
               />
               <Button
-                loading={loading}
                 onClick={toggle}
                 style="danger"
                 label="Label"
-                loading
                 icon={Keyboard}
-                iconPosition="right"
+                loading
               />
             </div>
             <div className="space-x-8">
@@ -578,6 +568,7 @@ const Buttons = () => {
                 style="danger"
                 label="Label"
                 icon={Keyboard}
+                iconPosition="left"
               />
               <Button
                 loading={loading}
@@ -585,6 +576,7 @@ const Buttons = () => {
                 style="danger"
                 label="Label"
                 icon={Keyboard}
+                iconPosition="left"
               />
               <Button
                 loading={loading}
@@ -593,14 +585,15 @@ const Buttons = () => {
                 label="Label"
                 disabled
                 icon={Keyboard}
+                iconPosition="left"
               />
               <Button
-                loading={loading}
                 onClick={toggle}
                 style="danger"
                 label="Label"
-                loading
                 icon={Keyboard}
+                iconPosition="left"
+                loading
               />
             </div>
           </div>
