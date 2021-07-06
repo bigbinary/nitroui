@@ -1,32 +1,29 @@
 import React, { useState } from "react";
-import { Right } from "@bigbinary/neeto-icons";
+import { Check } from "@bigbinary/neeto-icons";
 import { Button, Tab, Radio, Checkbox, Switch, Modal } from "../../lib";
 import Header from "../Header";
 
 const Components = () => {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
   return (
     <div className="w-full">
       <Header title="Buttons" />
       <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
-        <Modal.Header className="bg-gray-50">
-          <Modal.Title>Deactivate account</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          Are you sure you want to deactivate your account? All of your data
-          will be permanently removed from our servers forever. This action
-          cannot be undone.
-        </Modal.Body>
-        <Modal.Footer className="flex justify-end space-x-4">
+        <Modal.Title>They're creepy & they're kooky</Modal.Title>
+        Somewhere out in space live The Herculoids! Zok, the laser-ray dragon!
+        Igoo, the giant rock ape! Tundro, the tremendous! Gloop and Gleep, the
+        formless, fearless wonders! With Zandor, their leader, and his wife,
+        Tara, and son, Dorno, they team up to protect their planet from sinister
+        invaders! All-strong! All-brave! All-heroes! They're The Herculoids!
+        <Modal.Footer className="flex space-x-4">
           <Button
-            style="text"
-            label="Cancel"
+            icon={Check}
+            label="Continue"
             onClick={() => setShowModal(false)}
           />
           <Button
-            style="danger"
-            icon={Right}
-            label="Continue"
+            style="text"
+            label="Cancel"
             onClick={() => setShowModal(false)}
           />
         </Modal.Footer>
