@@ -4,7 +4,7 @@ import { Button, Tab, Radio, Checkbox, Switch, Modal } from "../../lib";
 import Header from "../Header";
 
 const Components = () => {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   return (
     <div className="w-full">
       <Header title="Buttons" />
