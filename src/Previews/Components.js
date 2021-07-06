@@ -4,14 +4,17 @@ import { Button, Tab, Radio, Checkbox, Switch, Modal } from "../../lib";
 import Header from "../Header";
 
 const Components = () => {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
   const toggleModal = () => setShowModal(!showModal);
   return (
     <div className="w-full">
       <Header title="Buttons" />
-      <Modal>
+      <Modal isOpen={showModal}>
         <Modal.Title>Confirm deletion</Modal.Title>
-        <Modal.Body>Are you sure buddy?</Modal.Body>
+        <Modal.Body>
+          Are you sure buddy?
+          <Button onClick={() => setShowModal(false)} />
+        </Modal.Body>
       </Modal>
       <div className="p-6 space-y-6">
         <div className="w-1/2 p-4 space-y-8 border border-indigo-500 border-dashed">
