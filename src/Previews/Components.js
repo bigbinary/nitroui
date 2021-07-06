@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Check } from "@bigbinary/neeto-icons";
-import { Button, Tab, Radio, Checkbox, Switch, Modal } from "../../lib";
+import { Button, Tab, Radio, Checkbox, Switch, Modal, Toastr } from "../../lib";
 import Header from "../Header";
 
 const Components = () => {
@@ -90,6 +90,14 @@ const Components = () => {
         <div className="w-1/2 p-4 space-y-8 border border-indigo-500 border-dashed">
           <div className="flex flex-row items-center justify-start space-x-6">
             <Button label="Show modal" onClick={() => setShowModal(true)} />
+          </div>
+        </div>
+        <div className="w-1/2 p-4 space-y-8 border border-indigo-500 border-dashed">
+          <div className="flex flex-row items-center justify-start space-x-6">
+            <Button
+              label="Show toastr"
+              onClick={() => Toastr.success("Hey there")}
+            />
           </div>
         </div>
       </div>

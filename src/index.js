@@ -9,11 +9,13 @@ import Buttons from "./Previews/Buttons";
 // import Overlays from './Previews/Overlays';
 import Components from "./Previews/Components";
 import "./index.scss";
+import { ToastContainer } from "react-toastify";
 // import Layouts from './Previews/Layouts';
 
 const App = () => {
   return (
     <BrowserRouter>
+      <ToastContainer />
       <div className="flex flex-row items-start justify-start">
         <Sidebar />
         <div className="relative flex flex-col flex-grow h-screen overflow-auto">

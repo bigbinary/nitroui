@@ -14,9 +14,13 @@
 @import "./components/radio";
 @import "./components/switch";
 @import "./components/tab";
+@import "./components/toast";
 
 //Layout
 @import "./layout/common";
 
 //Typography
 @import "./utilities/typography";
+
+//Vendors
+@import "./vendors/toastify";
